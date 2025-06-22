@@ -26,7 +26,7 @@
    ```
 3. **Clone from the repository and run**
    ```bash  
-    git clone https://github.com/yourusername/json_key_remover.git
+    git clone https://github.com/dedoZvezdi/json_key_remover.git
     cd json_key_remover
    ```
    
