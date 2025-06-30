@@ -44,13 +44,9 @@
 **2.** In the app:
 
   - Enter or browse to select the input JSON file
-
   - Enter or browse to choose the output location + filename
-
   - Click "Load JSON" to see all keys
-
   - Select which keys to remove or keep (choose mode)
-
   - Click "Process and Save" to export the filtered JSON
 ---
 
