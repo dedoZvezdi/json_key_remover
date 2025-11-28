@@ -1,12 +1,12 @@
 # JSON Key Remover
 
-😊 A simple Python tool for removing or keeping specific keys in JSON files — with a clean and intuitive GUI.
+A simple Python tool for removing or keeping specific keys in JSON files — with a clean and intuitive GUI.
 
-✅ GUI-based file selection | Custom output path and filename | Supports malformed JSON
+GUI-based file selection | Custom output path and filename | Supports malformed JSON
 
 ---
 
-## 🛠 Features
+## Features
 
 - **Graphical interface** – No coding required. Select files and keys via GUI
 - **Flexible key filtering** – Choose whether to *remove* or *keep* selected keys
@@ -16,7 +16,7 @@
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. **Requirements**:
    - Python 3.6+  
@@ -35,7 +35,7 @@
    
 ---
 
-## 🚀 Usage
+## Usage
 
 **1.** Run the script:
    ```bash
@@ -50,7 +50,7 @@
   - Click "Process and Save" to export the filtered JSON
 ---
 
-## Example 📋
+## Example 
 
 ### Before
 
@@ -74,7 +74,7 @@
    ```
 ---
 
-## FAQ ❓
+## FAQ 
 
  **Q:** Is the original file overwritten?  
   **A:** No, the output file is saved separately. You specify its location and filename.
