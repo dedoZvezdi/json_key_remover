@@ -1,56 +1,64 @@
 # JSON Key Remover
 
-A simple Python tool for removing or keeping specific keys in JSON files — with a clean and intuitive GUI.
-
-GUI-based file selection | Custom output path and filename | Supports malformed JSON
-
----
-
-## Features
-
-- **Graphical interface** – No coding required. Select files and keys via GUI
-- **Flexible key filtering** – Choose whether to *remove* or *keep* selected keys
-- **Input + Output file control** – Manually enter or browse input file and output destination
-- **Non-destructive cleaning** – Handles and auto-fixes malformed JSON with invalid characters
-- **Lightweight & dependency-free** – Built using only Python standard libraries
+<p align="center">
+  <b>A professional, high-performance tool for managing JSON datasets.</b>
+  <br>
+  Filter, clean, and restructure your JSON files with ease.
+</p>
 
 ---
+
+## Overview
+
+**JSON Key Remover** is a robust desktop application designed for developers and data analysts who need to sanitize or restructure JSON data. Whether you are removing sensitive fields, cleaning up API responses, or simplifying large datasets, this tool offers a secure and user-friendly solution.
+
+## Key Features
+
+- **Intuitive "Grid View" Interface**: View and manage hundreds of keys efficiently with a modern multi-column layout.
+- **Smart Filtering**: 
+  - **Search**: Instantly find keys with real-time text filtering.
+  - **Batch Operations**: "Select All" and "Deselect All" for rapid workflow.
+- **Flexible Processing Modes**:
+  - **Remove Mode**: Strip out unwanted keys.
+  - **Keep Mode**: Whitelist specific keys and discard the rest.
+- **Data Safety**:
+  - **Non-destructive**: Your original files are never overwritten.
+  - **Auto-Cleaning**: Automatically handles and sanitizes control characters in malformed JSON.
+- **Professional Standard**: Built with type-safe Python code and full unit test coverage.
 
 ## Installation
 
-1. **Requirements**:
-   - Python 3.6+  
-   - `tkinter` (usually included with Python)
+### Prerequisites
+- Python 3.6 or higher.
+- `tkinter` (Standard with Python installations).
 
-2. **Install manually (optional)**:
+### Setup
+1. Clone the repository:
    ```bash
-   pip install tk
+   git clone https://github.com/dedoZvezdi/json_key_remover.git
+   cd json_key_remover
    ```
-3. **Clone from the repository and run**
-   ```bash  
-    git clone https://github.com/dedoZvezdi/json_key_remover.git
-    cd json_key_remover
-    python json_gui.py
+
+2. Run the application:
+   ```bash
+   python run.py
    ```
-   
----
 
 ## Usage
 
-**1.** Run the script:
-   ```bash
-    python json_key_remover_gui.py
-   ```
-**2.** In the app:
+1. **Load Data**: Click **Browse** to select your input JSON file. The tool will parse and list all unique keys found recursively in the file.
+2. **Select Keys**:
+   - Use the **Search Bar** to filter keys by name.
+   - Check the boxes for keys you wish to target.
+   - Use **Select All** to check all currently visible keys.
+3. **Choose Action**:
+   - **Remove Selected Keys**: Deletes the checked keys from the structure.
+   - **Keep Selected Keys**: Preserves ONLY the checked keys and removes everything else.
+4. **Process**: Click **Process and Save** to write the cleaned JSON to your output path.
 
-  - Enter or browse to select the input JSON file
-  - Enter or browse to choose the output location + filename
-  - Click "Load JSON" to see all keys
-  - Select which keys to remove or keep (choose mode)
-  - Click "Process and Save" to export the filtered JSON
 ---
 
-## Example 
+## Example
 
 ### Before
 
@@ -74,7 +82,7 @@ GUI-based file selection | Custom output path and filename | Supports malformed 
    ```
 ---
 
-## FAQ 
+## FAQ
 
  **Q:** Is the original file overwritten?  
   **A:** No, the output file is saved separately. You specify its location and filename.
@@ -87,3 +95,18 @@ GUI-based file selection | Custom output path and filename | Supports malformed 
 
  **Q:** Can I keep only specific keys and discard all others?  
   **A:** Yes — choose "Keep selected keys" mode before saving.
+
+---
+
+## Development & Testing
+
+The project is structured as a standard Python package.
+
+```bash
+# Run unit tests
+python -m unittest discover tests
+```
+
+---
+
+*Copyright (c) 2025 Svetlin Ivanov. Licensed under the MIT License.*
